@@ -7,7 +7,13 @@ import (
 func main() {
 	//slice
 	cards := []string{newCard(), newCard()}
-	fmt.Println(cards)
+	// append does not mutate the slice
+	cards = append(cards, "Another card")
+	// loop through slice
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
 }
 
 func newCard() string {
