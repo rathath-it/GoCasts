@@ -1,18 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	//slice
-	cards := []string{newCard(), newCard()}
+	cards := deck{newCard(), newCard()}
 	// append does not mutate the slice
 	cards = append(cards, "Another card")
 	// loop through slice
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 }
 
