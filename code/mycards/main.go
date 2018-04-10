@@ -5,8 +5,9 @@ import (
 )
 
 func main() {
-	card := newCard()
-	fmt.Println(card)
+	//slice
+	cards := []string{newCard(), newCard()}
+	fmt.Println(cards)
 }
 
 func newCard() string {
