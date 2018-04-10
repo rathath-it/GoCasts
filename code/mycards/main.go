@@ -2,14 +2,8 @@ package main
 
 func main() {
 	//slice
-	cards := deck{newCard(), newCard()}
-	// append does not mutate the slice
-	cards = append(cards, "Another card")
+	cards := newDeck()
 	// loop through slice
 	cards.print()
 
-}
-
-func newCard() string {
-	return "Five of Dido"
 }
