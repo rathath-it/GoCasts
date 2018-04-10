@@ -11,9 +11,9 @@ func newDeck() deck {
 	cards := deck{}
 	cardSuits := []string{"Banana", "Faroula", "Toffaha"}
 	cardValues := []string{"Two", "Three", "Four"}
-	for i, suit := range cardSuits {
-		for j, val := range cardValues {
-			fmt.Println(i, j)
+	// underscore (_) mean we don't want to use the variable to not throw error
+	for _, suit := range cardSuits {
+		for _, val := range cardValues {
 			cards = append(cards, suit+" "+val)
 		}
 	}
