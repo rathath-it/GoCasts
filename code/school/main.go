@@ -7,6 +7,7 @@ import (
 func main() {
 	ahmad := getStudent("Ahmad")
 	fmt.Println(ahmad.toString())
-	ahmad.updateName("Mr Ahmed")
+	pointerToAhmed := &ahmad
+	pointerToAhmed.updateName("Mr Ahmed")
 	fmt.Println(ahmad.toString())
 }

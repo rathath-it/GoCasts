@@ -28,6 +28,6 @@ func (s student) toString() string {
 	return s.firstname + " " + s.lastname + ", living: " + s.address.street
 }
 
-func (s student) updateName(firstname string) {
-	s.firstname = firstname
+func (pointerToStudent *student) updateName(firstname string) {
+	(*pointerToStudent).firstname = firstname
 }
