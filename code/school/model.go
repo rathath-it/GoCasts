@@ -29,5 +29,6 @@ func (s student) toString() string {
 }
 
 func (pointerToStudent *student) updateName(firstname string) {
+	// Change in the original memory and not a copy of the object
 	(*pointerToStudent).firstname = firstname
 }
