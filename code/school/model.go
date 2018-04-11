@@ -27,3 +27,7 @@ func getStudent(firstname string) student {
 func (s student) toString() string {
 	return s.firstname + " " + s.lastname + ", living: " + s.address.street
 }
+
+func (s student) updateName(firstname string) {
+	s.firstname = firstname
+}
