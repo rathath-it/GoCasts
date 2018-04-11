@@ -19,7 +19,7 @@ func main() {
 		lastName:  "Party",
 		contactInfo: contactInfo{
 			email:   "jim@gmail.com",
-			zipCode: 94000,
+			zipCode: 94000, // Comma is required even it is the end
 		},
 	}
 
