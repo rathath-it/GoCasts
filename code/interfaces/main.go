@@ -21,6 +21,8 @@ func printGreeting(b bot) {
 	fmt.Println(b.getGreeting())
 }
 
+// func (eb englishBot) => eb is omitted because it becomes optional
+// since it is not used inside the function
 func (englishBot) getGreeting() string {
 	// VERY custom logic for generating an english greeting
 	return "Hi there!"
