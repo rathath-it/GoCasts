@@ -12,8 +12,11 @@ func main() {
 		"white": "#fff",
 	}
 	// Another way to declare map
-	var procolors map[string]string
-
+	var procolors map[int]string
+	procolors = map[int]string{
+		23: "#f23412",
+	}
+	procolors[10] = "#000"
 	// Another way again to declare map
 	premcolors := make(map[string]string)
 	premcolors["black"] = "#000"
