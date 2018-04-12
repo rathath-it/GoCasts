@@ -17,6 +17,7 @@ func main() {
 		23: "#f23412",
 	}
 	procolors[10] = "#000"
+	delete(procolors, 10)
 	// Another way again to declare map
 	premcolors := make(map[string]string)
 	premcolors["black"] = "#000"
