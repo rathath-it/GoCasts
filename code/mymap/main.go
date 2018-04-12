@@ -11,18 +11,27 @@ func main() {
 		"green": "#8cd123",
 		"white": "#fff",
 	}
+
+	printMap(colors)
+
 	// Another way to declare map
-	var procolors map[int]string
-	procolors = map[int]string{
-		23: "#f23412",
-	}
-	procolors[10] = "#000"
-	delete(procolors, 10)
-	// Another way again to declare map
-	premcolors := make(map[string]string)
-	premcolors["black"] = "#000"
+	// var procolors map[int]string
+	// procolors = map[int]string{
+	// 	23: "#f23412",
+	// }
+	// procolors[10] = "#000"
+	// delete(procolors, 10)
+	// // Another way again to declare map
+	// premcolors := make(map[string]string)
+	// premcolors["black"] = "#000"
 
 	fmt.Println(colors)
-	fmt.Println(procolors)
-	fmt.Println(premcolors)
+	// fmt.Println(procolors)
+	// fmt.Println(premcolors)
+}
+
+func printMap(m map[string]string) {
+	for key, value := range m {
+		fmt.Println("key: ", key, "-> value: ", value)
+	}
 }
