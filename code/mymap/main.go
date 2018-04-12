@@ -16,6 +16,7 @@ func main() {
 
 	// Another way again to declare map
 	premcolors := make(map[string]string)
+	premcolors["black"] = "#000"
 
 	fmt.Println(colors)
 	fmt.Println(procolors)
